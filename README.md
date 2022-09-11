@@ -4,7 +4,7 @@
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-I was tasked with creating a daily planner. This planner allows you to enter events in hour time-blocks, save those events so they persist if you refresh the page, and the page provides visual cues so you can quickly understand which events are current, in the past, and in he future. 
+I was tasked with creating a daily planner. This planner allows you to enter events in hour time-blocks, save those events so they persist if you refresh the page, and the page provides visual cues so you can quickly understand which events are current, in the past, and in the future. 
 
 When making this project I learned the importance of understanding APIs like jQuery and Bootstrap. These tools are very powerful and allow you to create functional apps much more efficiently.
 
