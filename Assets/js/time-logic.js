@@ -1,7 +1,10 @@
+// Separate page for css time change logic
 $('#currentDay').text(moment().format("dddd, MMMM Do YYYY"));
 
+// Creates an array of all text data fields named text-cell
 var textCells = $('td[name=text-cell');
 
+// switch case to handle each hour returned by moment().hour()
 switch (moment().hour()) {
     case 0:
     case 1:
@@ -12,6 +15,7 @@ switch (moment().hour()) {
     case 6:
     case 7:
     case 8:
+        // j creates the ability to use comparison operators on the text cells' data-id value 
         j = 0;
         for (i = 0; i < textCells.length; i++){
             var dataIdValue = $(textCells[i]).attr("data-Id");

@@ -1,3 +1,5 @@
+// Separate page for local storage functionality
+// All variable declared upfront
 var ninelocaltext = localStorage.getItem("ninetext");
 var tenlocaltext = localStorage.getItem("tentext");
 var elevenlocaltext = localStorage.getItem("eleventext");
@@ -27,6 +29,8 @@ var twoTextEl = $('#2pm-text');
 var threeTextEl = $('#3pm-text');
 var fourTextEl = $('#4pm-text');
 var fiveTextEl = $('#5pm-text');
+
+// Click events for each button to localy store the data
 
 nineSaveBtn.on("click", function () {
     localStorage.setItem("ninetext", $(nineTextEl).val());
@@ -64,6 +68,7 @@ fiveSaveBtn.on("click", function () {
     localStorage.setItem("fivetext", $(fiveTextEl).val());
 })
 
+// This renders locally stored values when the page loads
 function renderStoredText() {
     if (ninelocaltext) {
         nineTextEl.text(ninelocaltext)
