@@ -1,5 +1,5 @@
 $('#currentDay').text(moment().format("dddd, MMMM Do YYYY"));
-var tableEl = $('.table');
+
 var textCells = $('td[name=text-cell');
 
 switch (moment().hour()) {
